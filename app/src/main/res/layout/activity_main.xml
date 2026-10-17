@@ -1,60 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    android:padding="30dp"
-    android:background="#E7F0F8"
+    android:padding="24dp"
     tools:context=".MainActivity">
-
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
 
         <EditText
             android:id="@+id/etTimeAfter"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#FFFFFF"
-            android:padding="7dp"
-            android:ems="10"
+            android:padding="12dp"
+            android:hint="@string/et_time_after_hint"
             android:inputType="number" />
 
         <Button
             android:id="@+id/bAddTimeAlarm"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Alarm after time" />
+            android:layout_marginStart="8dp"
+            android:text="@string/btn_alarm_after_time" />
     </LinearLayout>
 
     <TextView
         android:id="@+id/tvWhere"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp" />
 
     <Button
         android:id="@+id/bWhere"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Select date and time" />
+        android:text="@string/btn_select_date_time" />
 
     <Button
         android:id="@+id/bSetAlarm"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Set Alarm"/>
+        android:text="@string/btn_set_alarm" />
 
     <Button
         android:id="@+id/bNow"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Now notification"/>
+        android:text="@string/btn_now_notification" />
+
+    <Button
+        android:id="@+id/bDateFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_select_date_fragment" />
 
 </LinearLayout>
